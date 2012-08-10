@@ -1,3 +1,5 @@
 Dgroup::Application.routes.draw do
-  root :to => 'user#index'
+  devise_for :users
+
+  root :to => 'users#index'
 end
