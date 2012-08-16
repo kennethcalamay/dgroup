@@ -2,3 +2,7 @@ h1 Welcome to the dgroup project
 
 - unless user_signed_in?
   = link_to "Sign in", '/users/sign_in'
+
+- @users.each do |user|
+  .user
+    p= "#{user.firstname} #{user.middlename} #{user.lastname}"
